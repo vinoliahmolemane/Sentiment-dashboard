@@ -1,7 +1,6 @@
 streamlit
 pandas
-transformers
-fpdf
-matplotlib
-seaborn
 scikit-learn
+nltk
+matplotlib
+transformers
