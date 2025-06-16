@@ -28,32 +28,32 @@ Features:
 Author: Your Name | For CAPACITI Tech Career Accelerator
 """
 
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-from transformers import pipeline
+# --- Imports ---
 import io
+import re
+import numpy as np
+import pandas as pd
+import streamlit as st
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings
+from collections import Counter
+from transformers import pipeline
+from sklearn.metrics import classification_report, confusion_matrix
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
-from collections import Counter
-import re
-from sklearn.metrics import classification_report, confusion_matrix
-import seaborn as sns
-import numpy as np
 
-# Streamlit page config
+# --- Streamlit config ---
 st.set_page_config(page_title="Sentiment Analysis Dashboard", layout="wide")
-
-# Title
 st.title("😊 Sentiment Analysis Dashboard")
 st.write("Upload a CSV with a 'text' column, or enter text below.")
 
-# Load sentiment model
+# --- Load sentiment model ---
 sentiment_pipeline = pipeline("sentiment-analysis")
 
-# Helper functions
+# --- Helper functions ---
 def extract_keywords(text, num_keywords=3):
     words = re.findall(r'\b\w+\b', text.lower())
     common_words = set(['the', 'is', 'and', 'in', 'it', 'this', 'i', 'with', 'a', 'of', 'to'])
