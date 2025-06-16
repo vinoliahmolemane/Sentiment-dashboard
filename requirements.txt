@@ -5,3 +5,5 @@ nltk
 matplotlib
 transformers
 reportlab
+torch
+
