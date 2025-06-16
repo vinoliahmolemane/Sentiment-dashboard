@@ -63,6 +63,13 @@ The app allows users to upload CSV files containing text data or input text manu
    ```bash
    pip install -r requirements.txt
 
+To run the Streamlit app (app.py):
+streamlit run app.py
+
+How to Run the Evaluation Script
+python evaluation.py
+
+
 GitHub Repository
 Access the full source code and latest updates here:
 https://github.com/vinoliahmolemane/Sentiment-dashboard
