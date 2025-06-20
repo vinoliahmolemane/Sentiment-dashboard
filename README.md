@@ -6,7 +6,7 @@
 
 This **Sentiment Analysis Dashboard** is a Streamlit web app designed to analyze text data sentiment using a Hugging Face transformer model. It supports multi-class classification with three labels: **POSITIVE**, **NEGATIVE**, and **NEUTRAL**, and provides confidence scores and keyword extraction.
 
-The app allows users to upload CSV files containing text data or input text manually, perform batch sentiment analysis efficiently, visualize sentiment distributions, compare two datasets side-by-side, and export results in CSV, JSON, or PDF formats. It also includes evaluation metrics such as a confusion matrix and classification report when true labels are provided.
+The app allows users to upload  CSV, XLSX, TXT, JSON files containing text data or input text manually, perform batch sentiment analysis efficiently, visualize sentiment distributions, compare two datasets side-by-side, and export results in CSV, JSON, or PDF formats. It also includes evaluation metrics such as a confusion matrix and classification report when true labels are provided.
 
 ---
 
