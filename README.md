@@ -12,7 +12,7 @@ The app allows users to upload CSV files containing text data or input text manu
 
 ## Features
 
-- Upload CSV file with a **`text`** column for batch sentiment analysis  
+- Upload CSV,XLSX, TXT, JSON file with a **`text`** column for batch sentiment analysis  
 - Manual text input for quick single-text analysis  
 - Multi-class sentiment classification: **POSITIVE**, **NEGATIVE**, **NEUTRAL**  
 - Confidence scoring for each prediction  
@@ -29,7 +29,7 @@ The app allows users to upload CSV files containing text data or input text manu
 
 ## How It Works
 
-1. **Upload CSV or enter text manually:**  
+1. **Upload  CSV, XLSX, TXT, JSON or enter text manually:**  
    The CSV must contain a `text` column. You can upload one or two CSV files (for comparison) or just enter text manually in the input box.
 
 2. **Sentiment classification:**  
